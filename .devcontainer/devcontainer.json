@@ -1,0 +1,26 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.13",
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "codespaces": {
+			"openFiles": [
+			  "README.md"
+			]
+		},
+    "vscode": {			
+      "settings": {
+          "workbench.editorAssociations": {
+            "*.md": "vscode.markdown.preview.editor"
+          }
+        },
+      "extensions": [
+        "GitHub.copilot",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "github.vscode-github-actions"
+      ]
+    }
+  }
+}
